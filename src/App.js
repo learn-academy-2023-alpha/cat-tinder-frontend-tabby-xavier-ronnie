@@ -1,22 +1,21 @@
 import "./App.css"
 import React, { useState } from "react"
 import { Route, Routes } from 'react-router-dom'
-import Footer from "./components/Footer"
 import Header from "./components/Header"
-import CatEdit from "./pages/CatEdit"
-import CatIndex from "./pages/CatIndex"
-import CatNew from "./pages/CatNew"
-import CatShow from "./pages/CatShow"
+import Footer from "./components/Footer"
 import Home from "./pages/Home"
+import CatIndex from "./pages/CatIndex"
+import CatShow from "./pages/CatShow"
+import CatNew from "./pages/CatNew"
+import CatEdit from "./pages/CatEdit"
 import NotFound from "./pages/NotFound"
-import Cats from "./mockCats"
+import cats from "./mockCats"
 
 
 
 const App = () => {
   const [mockCats, setMockCats] = useState(cats)
 
-  console.log(cats)
   return (
     <>
     <Header />

@@ -1,56 +1,61 @@
+import "/Users/learnacademy/Desktop/cat-tinder-frontend/src/components/Header.css"
 import React, { useState } from 'react';
+import { Nav, NavItem, NavLink } from 'reactstrap';
+import { MDBIcon } from 'mdb-react-ui-kit';
+import cats from '../mockCats';
 import {
   Collapse,
   Navbar,
   NavbarToggler,
   NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
   NavbarText,
 } from 'reactstrap';
-import './Header.css'
 
-const Header = (args) => {
+
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => setIsOpen(!isOpen);
 
   return (
+    <>
     <div>
-      <Navbar dark expand="md" className="bg-dark">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+    <MDBIcon icon='cat' />
+      <Navbar dark expand="lg" className="bg-danger">
+        <NavbarBrand href="/">Meow Match</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink href="/cats">Cats</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-                GitHub
+              <NavLink href="/new">
+                New Cat
               </NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                Options
+                Your Cats
               </DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem>Option 1</DropdownItem>
-                <DropdownItem>Option 2</DropdownItem>
+                <DropdownItem>Your Matches</DropdownItem>
+                <DropdownItem>Favorites</DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>Reset</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          
+          <NavbarText>
+          </NavbarText>
         </Collapse>
       </Navbar>
     </div>
+    </>
   );
 }
 
