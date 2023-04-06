@@ -2,7 +2,11 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <h1>Ronnie and Xavier</h1>
+    <>
+    <footer>
+    <p>&copy; 2023 Meow Match | Xavier and Ronnie</p>
+    </footer>
+    </>
   )
 }
 

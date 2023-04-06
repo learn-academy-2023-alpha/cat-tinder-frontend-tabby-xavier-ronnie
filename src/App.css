@@ -1,5 +1,42 @@
-Header {
-    background-color: black;
-    padding-right: 20px;
-    
+* {
+    margin: 0;
+    padding: 0;
 }
+.page-body {
+    text-align: center;
+    margin: 3rem;
+    height: 110vh;
+}
+
+footer {
+    font-size: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFFEF1;
+    display: flex;
+    justify-content: space-around;
+  }
+  a {
+    color: white !important;
+    text-decoration: none !important;
+  }
+  a:hover {
+    cursor: pointer !important;
+    color: #FFFEF1 !important;
+    text-decoration: underline !important;
+  }
+
+.home {
+    text-align: center;
+   width: 50%;
+   margin: auto;
+   padding-top: 10%;
+
+}
+
+.happy-cat {
+position: static;
+padding-left: 105px;
+}
+  
