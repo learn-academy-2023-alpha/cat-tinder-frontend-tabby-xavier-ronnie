@@ -13,19 +13,7 @@ describe("<Header />", () => {
       div
     )
   })
-  // it("renders a logo with a src and alt", () => {
-  //   const div = document.createElement("div")
-  //   render(
-  //     <BrowserRouter>
-  //       <Header />
-  //     </BrowserRouter>,
-  //     div
-  //   )
-  //   const logo = screen.getByRole("img")
-  // expect(logo).toHaveAttribute("src", "https://freesvg.org/img/Colorful-Cat-Heart-Tail-Hearts-8.png")
-  // expect(logo).toHaveAttribute("alt", "greetings cat")
-  // })
-  it("has clickable links", () => {
+     it("has clickable links", () => {
     render(
       <BrowserRouter>
         <Header />
