@@ -1,4 +1,4 @@
-import "/Users/learnacademy/Desktop/cat-tinder-frontend/src/components/Header.css"
+
 import React, { useState } from 'react';
 import { Nav, NavItem, NavLink } from 'reactstrap';
 import { MDBIcon } from 'mdb-react-ui-kit';
@@ -8,10 +8,6 @@ import {
   Navbar,
   NavbarToggler,
   NavbarBrand,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
   NavbarText,
 } from 'reactstrap';
 
@@ -37,17 +33,7 @@ const Header = () => {
                 New Cat
               </NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Your Cats
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>Your Matches</DropdownItem>
-                <DropdownItem>Favorites</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Reset</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+          
           </Nav>
           
           <NavbarText>
