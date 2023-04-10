@@ -24,7 +24,7 @@ const App = () => {
         <Route path="/cats" element={<CatIndex cats={cats} />} />
         <Route path="/cats/:id" element={<CatShow cats={cats} />} />
         <Route path="/new" element={<CatNew />} />
-        <Route path="/edit/:id" element={<CatEdit cats={mockCats} />} />
+        <Route path="/edit/:id" element={<CatEdit cats={cats} />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     <Footer />

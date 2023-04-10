@@ -1,5 +1,7 @@
 import React from "react"
-import { Card, CardBody, CardTitle,CardText,CardSubtitle,Button} from "reactstrap"
+import { Card, CardBody, CardTitle,CardText,CardSubtitle,Button, } from "reactstrap"
+import { NavLink } from "react-router-dom"
+
 
 const CatIndex = ({ cats }) => {
   return (
@@ -29,7 +31,7 @@ const CatIndex = ({ cats }) => {
             Enjoys: {cat.enjoys}
           </CardText>
           <Button>
-            Meow your match ! 🐈
+          <NavLink to={`${cat.id}`}>Meow your match ! 🐈</NavLink>
           </Button>
         </CardBody>
       </Card>

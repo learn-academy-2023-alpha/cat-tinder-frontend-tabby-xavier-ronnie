@@ -6,10 +6,10 @@ describe("<NotFound />", () => {
     render( 
         <NotFound />
     )
-      const NotFound = screen.getByRole('heading', {
+      const NotFoundHeading = screen.getByRole('heading', {
         name: /oops! no cats to be found beyond the plains/i
       })
-      expect(NotFound).toBeInTheDocument()
+      expect(NotFoundHeading).toBeInTheDocument()
       const image =screen.getByRole('img', {
         name: /greetings cat/i
       })
