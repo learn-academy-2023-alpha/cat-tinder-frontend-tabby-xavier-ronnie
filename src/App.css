@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: navajowhite;
 }
 .page-body {
     text-align: center;
@@ -39,4 +40,15 @@ footer {
 position: static;
 padding-left: 105px;
 }
-  
+.card {
+  margin: 2rem 0;
+}
+
+.cat-index-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 10px; 
+  width:auto;
+}
+
